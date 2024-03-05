@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.logo{
+    width: 17%;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 5px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    color: grey;
+}
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding:0 20px;
+}
+.btn-sm{
+    vertical-align: middle;
+    padding: 3px 7px;
+}
+#search{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 13px;
+    outline:none;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7)url('../img/bg.jpg');
+    background-size: cover;
+    /* background-blend-mode: darken; */
+}
+.firstsection{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 55%;
+    margin: auto;
+    height: 75%;
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondhalf img{
+    width: 35%;
+    border: 2px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.textbig{
+    font-size: 25px;
+}
+.textsmall{
+    font-size: 20px;
+}
+.btn{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor:pointer;
+    background: none;
+    color: white;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.secLeft{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0 55px;
+}
+.secTag{
+    padding: 7px 0px;
+}
+.thumbnail img{
+    height: 157px;
+    width: 159px;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+.secSubTag{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact{
+    background-color: #fff8ef;
+    height: 70vh;
+}
+.text-center{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.form{
+    max-width: 77%;
+    margin: auto;
+}
+.form input{
+    width: 100%;
+    padding: 8px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 17px;
+    margin: 9px 0px;
+    outline: none;
+}
+.btn-dark{
+    color: grey;
+    border: 2px solid grey;
+    padding: 5px 13px;
+    margin: 6px;
+}
+.text-footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    display: none;
+    right: 5%;
+}
+.line{
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    margin: 5px;
+}
+
+@media (max-width:940px) and (min-width:867px){
+    .firsthalf {
+        width: 100%;
+    }
+    .section {
+        height: 500px;
+    }
+    #search {
+        padding: 2px;
+        width: 75%;
+    }
+}
+@media only screen and (max-width:867px) and (min-width:768px){
+    .logo img {
+        width: 57%;
+    }
+    .nav-list {
+        width: 82%;
+    }
+    #search {
+        padding: 2px;
+        width: 75%;
+    }
+    .btn-sm {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .firsthalf {
+        width: 140%;
+    }
+    .section{
+        height: 560px;
+    }
+}
+@media only screen and (max-width:768px) and (min-width:650px){
+    .rightNav {
+        width: 25%;
+    }
+    .nav-list li {
+         padding: 5px 18px;
+    }
+    .navlist{
+        width: 71%;
+    }
+    .logo img {
+        width: 58%;
+    }
+    #search {
+        padding: 2px;
+        width: 70%;
+    }
+    .btn-sm {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .box-main{
+        max-width: 71%;
+    }
+    .firsthalf {
+        width: 103%;
+    }
+    .section {
+        height: 834px;
+        max-width: 83%;
+    }
+    
+}
+@media only screen and (max-width:650px){
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .navbar{
+       height: 330px;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .btn-sm {
+        padding: 2px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .logo img {
+        width: 83%;
+    }
+    .logo {
+        width: 11%;
+    }
+    .nav-list li {
+        padding: 15px 12px;
+    }
+    .rightNav {
+        width: 50%;
+        text-align: center;
+        padding: 5px 20px;
+    }    
+    #search {
+        padding: 3px;
+        width: 100%;
+    }
+    .btn-sm {
+        padding: 3px;
+        font-size: 13px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 50px;
+    }
+    .v-nav{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .sec-left{
+        max-width: 100%;
+    }
+}
